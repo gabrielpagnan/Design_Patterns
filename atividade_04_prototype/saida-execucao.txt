@@ -1,0 +1,50 @@
+
+========================================================================
+1. CLIENTE PEDE COPIAS PELO NOME (sem dar 'new Inimigo(...)')
+========================================================================
+Modelos registrados: [guerreiro, mago, arqueiro, chefe]
+  Inimigo[id=8bcc55f] Guerreiro vida=120    dano=18    arma=Espada Longa (+12 dano) [id=75b84c92]
+  Inimigo[id=6bc7c054] Mago      vida=70     dano=30    arma=Cajado Arcano (+25 dano) [id=232204a1]
+  Inimigo[id=4aa298b7] Arqueiro  vida=85     dano=22    arma=Arco Curto (+15 dano) [id=7d4991ad]
+  Inimigo[id=28d93b30] Chefe     vida=500    dano=60    arma=Machado Sombrio (+80 dano) [id=1b6d3586]
+
+========================================================================
+2. VARIACAO SOBRE A BASE: um GUERREIRO ELITE
+========================================================================
+Elite (ajustado) : Inimigo[id=4554617c] Guerreiro Elite vida=300    dano=45    arma=Espada Rúnica (+40 dano) [id=74a14482]
+Prototipo original: Inimigo[id=1540e19d] Guerreiro vida=120    dano=18    arma=Espada Longa (+12 dano) [id=677327b6]
+  -> o modelo do registro continua 120/18 com Espada Longa: INTACTO.
+
+========================================================================
+3. OS CLONES SAO OBJETOS DISTINTOS
+========================================================================
+mago1          -> Inimigo[id=14ae5a5] Mago      vida=70     dano=30    arma=Cajado Arcano (+25 dano) [id=7f31245a]
+mago2          -> Inimigo[id=6d6f6e28] Mago      vida=70     dano=30    arma=Cajado Arcano (+25 dano) [id=135fbaa4]
+prototipo mago -> Inimigo[id=45ee12a7] Mago      vida=70     dano=30    arma=Cajado Arcano (+25 dano) [id=330bedb4]
+  mago1 == mago2          ? false
+  mago1 == prototipo      ? false
+  identityHashCode iguais ? false
+
+========================================================================
+4. COPIA PROFUNDA: cada clone tem a SUA Arma
+========================================================================
+Antes:
+  mago1.arma     -> Cajado Arcano (+25 dano) [id=7f31245a]
+  mago2.arma     -> Cajado Arcano (+25 dano) [id=135fbaa4]
+  prototipo.arma -> Cajado Arcano (+25 dano) [id=330bedb4]
+  mago1.arma == mago2.arma ? false
+Depois de mexer SO na arma do mago1:
+  mago1.arma     -> Cajado AMALDIÇOADO (+999 dano) [id=7f31245a]  <-- alterado
+  mago2.arma     -> Cajado Arcano (+25 dano) [id=135fbaa4]  <-- intacto
+  prototipo.arma -> Cajado Arcano (+25 dano) [id=330bedb4]  <-- intacto
+
+========================================================================
+5. BONUS: como seria com COPIA RASA (mesma instancia de Arma)
+========================================================================
+arqueiroA -> Inimigo[id=4b67cf4d] Arqueiro  vida=85     dano=22    arma=Arco Curto (+15 dano) [id=7ea987ac]
+arqueiroB -> Inimigo[id=12a3a380] Arqueiro  vida=85     dano=22    arma=Arco Curto (+15 dano) [id=7ea987ac]
+  Objetos distintos?      true
+  Mas dividem a Arma?     true
+Depois de mexer SO na arma do arqueiroB:
+  arqueiroB.arma -> Arco Longo (+60 dano) [id=7ea987ac]
+  arqueiroA.arma -> Arco Longo (+60 dano) [id=7ea987ac]  <-- MUDOU SOZINHO (bug do aliasing)
