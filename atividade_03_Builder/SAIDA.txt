@@ -1,0 +1,81 @@
+
+================================================================
+ 1. MONTAGEM PELA API FLUENTE
+================================================================
+
+--- Lanche simples (so obrigatorios) ---
+Pao: Pao frances
+  Proteina: File de frango (ao ponto)
+
+--- Lanche completo (todos os opcionais) ---
+Pao: Pao de hamburguer
+  Proteina: Hamburguer bovino 180g (bem passada)
+  Queijo: Cheddar duplo
+  Vegetais: Alface americana, Tomate, Picles
+  Molho: Molho especial
+  Obs.: Cortar ao meio
+
+--- Lanche intermediario (combinacao parcial) ---
+Pao: Ciabatta
+  Proteina: Pernil (ao ponto)
+  Molho: Vinagrete
+  Obs.: Sem sal adicional
+
+
+================================================================
+ 2. MONTAGEM PELO DIRECTOR
+================================================================
+
+--- Misto ---
+Pao: Pao de forma
+  Proteina: Presunto (ao ponto)
+  Queijo: Mussarela
+
+--- X-Salada ---
+Pao: Pao brioche
+  Proteina: Hamburguer bovino 150g (ao ponto)
+  Queijo: Cheddar
+  Vegetais: Alface, Tomate, Cebola
+  Molho: Maionese da casa
+
+--- Especial da Casa ---
+Pao: Pao australiano
+  Proteina: Costela desfiada (bem passada)
+  Queijo: Gorgonzola
+  Vegetais: Rucula, Tomate seco, Cebola caramelizada
+  Molho: Barbecue defumado
+  Obs.: Servir com farofa de bacon a parte
+
+--- Veggie ---
+Pao: Pao integral
+  Proteina: Hamburguer de grao-de-bico (ao ponto)
+  Vegetais: Alface, Tomate
+  Molho: Mostarda e mel
+  Obs.: Sem queijo (vegano)
+
+
+================================================================
+ 3. VALIDACAO DOS CAMPOS OBRIGATORIOS
+================================================================
+
+[OK] Tentativa sem proteina barrada pelo build():
+     IllegalStateException: Nao e possivel montar o lanche: a proteina e obrigatoria.
+
+[OK] Tentativa sem pao barrada pelo build():
+     IllegalStateException: Nao e possivel montar o lanche: o pao e obrigatorio.
+
+[OK] Pao em branco barrado pelo build():
+     IllegalStateException: Nao e possivel montar o lanche: o pao e obrigatorio.
+
+================================================================
+ 4. IMUTABILIDADE DO PRODUTO
+================================================================
+
+[OK] Nao foi possivel alterar a lista de vegetais do lanche
+     pronto (UnsupportedOperationException). O produto e imutavel.
+
+[OK] Reuso do Builder apos o build():
+     lanche construido antes  -> vegetais [Alface], molho null
+     lanche construido depois -> vegetais [Alface, Tomate], molho Mostarda
+     O primeiro lanche nao foi afetado (copia defensiva).
+

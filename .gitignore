@@ -1,0 +1,11 @@
+# Build Java
+out/
+bin/
+*.class
+*.jar
+
+# macOS
+.DS_Store
+
+# Configuracao local de ferramentas
+.claude/settings.local.json
