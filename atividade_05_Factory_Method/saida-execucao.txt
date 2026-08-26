@@ -1,0 +1,24 @@
+---------------------------------------------
+Usando: EmailService
+---------------------------------------------
+[EMAIL] Conectando ao servidor SMTP...
+[EMAIL] Para: gabriel.pagnan@aluno.satc.edu.br
+[EMAIL] Corpo: Sua nota de Design Patterns foi lancada. -- Portal Academico
+[LOG 20:00:51] canal=E-mail destinatario=gabriel.pagnan@aluno.satc.edu.br status=ENVIADO
+
+---------------------------------------------
+Usando: SmsService
+---------------------------------------------
+[SMS] Enviando pela operadora para o numero (48) 99999-1234
+[SMS] Texto (60/160): Sua nota de Design Patterns foi lancada. -- Portal Academico
+[LOG 20:00:51] canal=SMS destinatario=(48) 99999-1234 status=ENVIADO
+
+---------------------------------------------
+Usando: PushService
+---------------------------------------------
+[PUSH] Buscando o token do dispositivo do aluno aluno-2023001
+[PUSH] Disparando notificacao: Sua nota de Design Patterns foi lancada. -- Portal Academico
+[LOG 20:00:51] canal=Push destinatario=aluno-2023001 status=ENVIADO
+
+O fluxo (montar -> criar -> enviar -> log) foi o mesmo nos 3 casos.
+So mudou o Notificador devolvido pelo metodo fabrica.
