@@ -1,0 +1,30 @@
+=== Fabrica: FabricaMobiliaModerna ===
+Kit de sala de estar - estilo Moderno
+  [CADEIRA] Moderna: assento de couro branco sobre pes de aco escovado.
+  [SOFA] Moderno: linhas retas, tecido cinza e encosto baixo.
+  [MESA] Moderna: tampo de vidro temperado com base minimalista.
+  Conferencia: cadeira=Moderno, sofa=Moderno, mesa=Moderno -> kit coerente
+
+=== Fabrica: FabricaMobiliaVitoriana ===
+Kit de sala de estar - estilo Vitoriano
+  [CADEIRA] Vitoriana: madeira entalhada, estofado em veludo bordo.
+  [SOFA] Vitoriano: bracos curvos, capitone e pes torneados.
+  [MESA] Vitoriana: mogno macico com detalhes em marchetaria.
+  Conferencia: cadeira=Vitoriano, sofa=Vitoriano, mesa=Vitoriano -> kit coerente
+
+=== Fabrica: FabricaMobiliaArtDeco ===
+Kit de sala de estar - estilo Art Deco
+  [CADEIRA] Art Deco: encosto em leque com acabamento dourado.
+  [SOFA] Art Deco: veludo verde esmeralda e formas geometricas.
+  [MESA] Art Deco: tampo em marmore preto com base espelhada.
+  Conferencia: cadeira=Art Deco, sofa=Art Deco, mesa=Art Deco -> kit coerente
+
+=== Vitrine da loja ===
+Kit de sala de estar - estilo Vitoriano
+  [CADEIRA] Vitoriana: madeira entalhada, estofado em veludo bordo.
+  [SOFA] Vitoriano: bracos curvos, capitone e pes torneados.
+  [MESA] Vitoriana: mogno macico com detalhes em marchetaria.
+  Conferencia: cadeira=Vitoriano, sofa=Vitoriano, mesa=Vitoriano -> kit coerente
+
+O ConfiguradorDeSala e o Main nao dao 'new' em nenhuma peca.
+Trocar a fabrica troca o kit inteiro de uma vez.
