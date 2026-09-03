@@ -10,6 +10,7 @@ Atividades da disciplina de Padrões de Projeto — SATC.
 | [`atividade_04_prototype`](atividade_04_prototype) | Prototype | Respostas + implementação em Java com registro de protótipos e cópia profunda |
 | [`atividade_05_Factory_Method`](atividade_05_Factory_Method) | Factory Method | Respostas + implementação em Java de um sistema de notificações |
 | [`atividade_06_Abstract_Factory`](atividade_06_Abstract_Factory) | Abstract Factory | Respostas + implementação em Java de kits de móveis por estilo |
+| [`atividade_07_Adapter`](atividade_07_Adapter) | Adapter | Respostas + implementação em Java de integração com serviços de clima |
 
 ## Executando os exemplos em Java
 

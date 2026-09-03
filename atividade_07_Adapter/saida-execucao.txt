@@ -1,0 +1,5 @@
+Usando OpenWeather:
+Temperatura em Criciúma: 25°C
+
+Usando AccuWeather:
+Temperatura em Criciúma: 25°C
