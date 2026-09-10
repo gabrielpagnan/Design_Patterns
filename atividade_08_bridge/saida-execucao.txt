@@ -1,0 +1,18 @@
+Dirigindo um Sedan (porta-malas separado, foco em conforto):
+  Motor a gasolina ligado: ignição e marcha lenta em 800 rpm.
+  Motor a gasolina acelerando: trocando marchas até 4000 rpm.
+
+Dirigindo um Sedan (porta-malas separado, foco em conforto):
+  Motor elétrico ligado: sistema pronto, sem ruído.
+  Motor elétrico acelerando: torque instantâneo, sem trocas de marcha.
+
+Dirigindo um SUV (altura elevada, tração nas quatro rodas):
+  Motor a gasolina ligado: ignição e marcha lenta em 800 rpm.
+  Motor a gasolina acelerando: trocando marchas até 4000 rpm.
+
+Dirigindo um SUV (altura elevada, tração nas quatro rodas):
+  Motor elétrico ligado: sistema pronto, sem ruído.
+  Motor elétrico acelerando: torque instantâneo, sem trocas de marcha.
+
+O mesmo Sedan roda com motor a gasolina e com motor elétrico;
+o mesmo MotorGasolina roda em Sedan e em SUV.

@@ -1,0 +1,26 @@
+=== O mesmo getPreco() para prato e para combo ===
+Hambúrguer -> R$ 18,00
+Combo Duplo -> R$ 44,00
+Combo Família -> R$ 84,00
+
+=== Estrutura do Combo Família ===
++ Combo Família (total R$ 84,00)
+   + Combo Duplo (total R$ 44,00)
+      - Hambúrguer: R$ 18,00
+      - Hambúrguer: R$ 18,00
+      - Refrigerante: R$ 8,00
+   - Batata frita: R$ 12,00
+   - Batata frita: R$ 12,00
+   - Refrigerante: R$ 8,00
+   - Refrigerante: R$ 8,00
+
+=== O total do Combo Família já inclui o sub-combo ===
+Combo Duplo dentro do Combo Família = R$ 44,00  (18,00 + 18,00 + 8,00)
+Combo Família                       = R$ 84,00  (44,00 do sub-combo + 12,00 + 12,00 + 8,00 + 8,00)
+Sem o sub-combo                     = R$ 40,00  (o total caiu exatamente os 44,00 do Combo Duplo)
+
+=== Item novo (BebidaAlcoolica) sem alterar Combo nem os pratos ===
++ Combo Happy Hour (total R$ 29,50)
+   - Chopp: R$ 17,50 (base R$ 14,00 + imposto de 25%)
+   - Batata frita: R$ 12,00
+Combo Happy Hour -> R$ 29,50

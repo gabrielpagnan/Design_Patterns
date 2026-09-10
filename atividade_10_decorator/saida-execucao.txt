@@ -1,0 +1,16 @@
+=== Combinações ===
+Café -> R$ 5,00
+Café com leite -> R$ 6,50
+Café com leite com chantilly -> R$ 8,50
+
+=== A ordem dos complementos aparece na descrição ===
+Café com leite com chantilly -> R$ 8,50
+Café com chantilly com leite -> R$ 8,50
+
+=== O custo soma camada por camada ===
+Cafe                    = R$ 5,00
+Leite(Cafe)             = R$ 6,50  (5,00 + 1,50)
+Chantilly(Leite(Cafe))  = R$ 8,50  (5,00 + 1,50 + 2,00)
+
+=== Complemento novo, sem alterar as classes antigas ===
+Café com leite com chantilly com calda de caramelo -> R$ 11,50

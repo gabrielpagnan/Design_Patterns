@@ -11,6 +11,9 @@ Atividades da disciplina de Padrões de Projeto — SATC.
 | [`atividade_05_Factory_Method`](atividade_05_Factory_Method) | Factory Method | Respostas + implementação em Java de um sistema de notificações |
 | [`atividade_06_Abstract_Factory`](atividade_06_Abstract_Factory) | Abstract Factory | Respostas + implementação em Java de kits de móveis por estilo |
 | [`atividade_07_Adapter`](atividade_07_Adapter) | Adapter | Respostas + implementação em Java de integração com serviços de clima |
+| [`atividade_08_bridge`](atividade_08_bridge) | Bridge | Respostas + implementação em Java de veículos e motores combinados por composição |
+| [`atividade_09_composite`](atividade_09_composite) | Composite | Respostas + implementação em Java de cardápio com pratos e combos aninhados |
+| [`atividade_10_decorator`](atividade_10_decorator) | Decorator | Respostas + implementação em Java de complementos de bebidas em uma cafeteria |
 
 ## Executando os exemplos em Java
 
