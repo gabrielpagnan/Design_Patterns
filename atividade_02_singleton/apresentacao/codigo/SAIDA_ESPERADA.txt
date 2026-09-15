@@ -1,0 +1,7 @@
+=== CENTRAL DE ALERTAS ===
+POLICIA: acidente na rodovia
+BOMBEIROS: incêndio controlado
+SAMU: ambulância enviada
+
+Todas as referências apontam para o mesmo objeto: true
+Total de alertas compartilhados: 3
