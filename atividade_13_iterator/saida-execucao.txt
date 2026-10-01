@@ -1,0 +1,9 @@
+Total de faixas: 3 | duracao: 10 min
+Favoritas:
+  * Faixa A - Artista X
+  * Faixa C - Artista Z
+Ordem original: [Faixa A - Artista X, Faixa B - Artista Y, Faixa C - Artista Z]
+Tocando (shuffle): Faixa B - Artista Y
+Tocando (shuffle): Faixa A - Artista X
+Tocando (shuffle): Faixa C - Artista Z
+Ordem depois do shuffle: [Faixa A - Artista X, Faixa B - Artista Y, Faixa C - Artista Z]

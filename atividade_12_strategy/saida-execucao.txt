@@ -1,0 +1,8 @@
+Cliente comum | valor: 200.00 | desconto: 0.00 | frete: 31.00 | total: 231.00
+Cliente VIP (10% de desconto) | valor: 200.00 | desconto: 20.00 | frete: 18.00 | total: 198.00
+Cliente corporativo (20% de desconto) | valor: 200.00 | desconto: 40.00 | frete: 36.00 | total: 196.00
+
+Aplicando promoção temporária ao pedido VIP:
+Promoção especial (30% de desconto) | valor: 200.00 | desconto: 60.00 | frete: 18.00 | total: 158.00
+Voltando à regra VIP padrão:
+Cliente VIP (10% de desconto) | valor: 200.00 | desconto: 20.00 | frete: 18.00 | total: 198.00

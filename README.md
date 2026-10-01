@@ -14,6 +14,8 @@ Atividades da disciplina de Padrões de Projeto — SATC.
 | [`atividade_08_bridge`](atividade_08_bridge) | Bridge | Respostas + implementação em Java de veículos e motores combinados por composição |
 | [`atividade_09_composite`](atividade_09_composite) | Composite | Respostas + implementação em Java de cardápio com pratos e combos aninhados |
 | [`atividade_10_decorator`](atividade_10_decorator) | Decorator | Respostas + implementação em Java de complementos de bebidas em uma cafeteria |
+| [`atividade_12_strategy`](atividade_12_strategy) | Strategy | Exercícios + refatoração em Java de regras de pedido intercambiáveis |
+| [`atividade_13_iterator`](atividade_13_iterator) | Iterator | Exercícios + refatoração em Java de travessias encapsuladas de playlist |
 
 ## Executando os exemplos em Java
 
